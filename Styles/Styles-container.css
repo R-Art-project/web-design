@@ -5,7 +5,7 @@
 .principal-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 1fr;
     grid-gap: 15px;
 }
 .principal-section img{
@@ -28,6 +28,9 @@
     grid-row: 1 / 2;
     justify-content: center;
     text-align: center;
+}
+.principal-section .headline h2{
+    color: #abacad;
 }
 .Service-one{
     grid-column: 1 / 2;
@@ -71,47 +74,63 @@
     height: auto;
     grid-gap: 10px;
     margin-top: 30px;
-    justify-content: center;
+    padding-bottom: 50px;
     position: relative;
 }
 .secundary-section h3{
-    margin: 30px 20px;
+    grid-row: 1 / 2;
+    margin: 20px 20px;
     border-bottom: 1px solid black; 
     font-size: 40px;
     padding-bottom: 20px; 
 }
 .secundary-section p{
-    margin: 30px 20px;
+    padding: 20px 20px 0px 20px;
 }
-.secundary-section button{
+.btn-style{
     color: #fff;
     background-color: #4b4d4c;
-    position: absolute;
     width: 100px;
     height: 30px;
     outline: none;
     cursor: pointer;
     border: none;
+    margin-top: 40px;
     margin-left: 20px;
-    margin-bottom: 20px;
 }
-.secundary-section button:hover{
+.btn-style:hover{
     background-color: #db5130;
 }
 .columnOne-welcom{
     grid-column: 1 / 2;
+    display: grid;
+    align-items: start;
+}
+.columnOne-welcom button{
+    align-self: end;
 }
 .columnTwo-News{
     grid-column: 2 / 3;
+    display: grid;
+    align-items: start;
+}
+.columnTwo-News button{
+    align-self: end;
 }
 .columnThree-ourServices{
     grid-column: 3 / 4;
+    display: grid;
+    align-items: start;
+}
+.columnThree-ourServices button{
+    align-self: end;
 }
 .columnThree-ourServices ul{
     list-style-type: none;
+    align-self: start;
 }
 .columnThree-ourServices ul li{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .columnThree-ourServices ul li a{
     color: #db5130;
