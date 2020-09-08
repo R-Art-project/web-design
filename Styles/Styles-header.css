@@ -1,9 +1,3 @@
-body{
-    background-color: #f3f3f3;
-}
-h1{
-    margin-bottom: 0px;
-}
 header{
     padding: 2em 0px;  
     margin: 0px 5em;
@@ -11,13 +5,21 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid #4b4a54;
 }
+header h1{
+    font-family: 'Laila', serif;
+    font-size: 40px;
+    margin: 0px;
+    font-style: italic;
+}
+header span{
+    color: #db5130;
+}
 header nav ul{
     display: flex;
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-top: 20px;   
+    /* margin-top: 20px;  */  
 }
 header li{
   text-align: center;

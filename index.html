@@ -4,26 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/Styles-header.css" media="all" />
+    <link rel="stylesheet" href="./Styles/GeneralStyles.css" media="all" />
+    <link rel="stylesheet" href="./Styles/Styles-container.css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Laila&display=swap" rel="stylesheet">
     <title>Website layout</title>
 </head>
 <body>
     <header> 
-        <h1>Empresas.com</h1>
+        <h1>Empresa<span>.com</span></h1>
         <nav> 
             <ul>
-                <li><button id="tablink" onclick="openContents(event, 'home')"id="defaultOpen">Inicio</button></li>
-                <li><button id="tablink" onclick="openContents(event, 'about')">Acerca</button></li>
-                <li><button id="tablink" onclick="openContents(event, 'portfolio')">Servicios</button></li>
-                <li><button id="tablink" onclick="openContents(event, 'blog')">Productos</button></li>
-                <li><button id="tablink" onclick="openContents(event, 'contact')">Contacto</button></li>
+                <li><button class="tablink" onclick="openContents(event, 'home')"id="defaultOpen">Inicio</button></li>
+                <li><button class="tablink" onclick="openContents(event, 'about')">Acerca</button></li>
+                <li><button class="tablink" onclick="openContents(event, 'portfolio')">Servicios</button></li>
+                <li><button class="tablink" onclick="openContents(event, 'blog')">Productos</button></li>
+                <li><button class="tablink" onclick="openContents(event, 'contact')">Contacto</button></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <div id="tabcontent">
-
+    <section id="home" class="tabcontent">
+        <div class="container">
+            <div class="principal-section">
+                <div class="headline">
+                    <h1>Soluciones corporativas</h1>
+                    <h2>Lorem ipsum dolor sit amet concectetuer adipiscing elit</h2>
+                </div>
+                <div class="Service-one">
+                    <div class="image-container">
+                        <img src="https://hudsonir.com/wp-content/uploads/2019/08/clients.jpg" alt="Consultoría"/>
+                    </div>
+                    <h4>Cosultoría</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="Service-two">
+                    <img src="https://hudsonir.com/wp-content/uploads/2019/08/clients.jpg" alt="Consultoría"/>
+                    <h4>Formación</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="Service-three">
+                    <img src="https://hudsonir.com/wp-content/uploads/2019/08/clients.jpg" alt="Consultoría"/>
+                    <h4>Análisis</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="Service-for">
+                    <img src="https://hudsonir.com/wp-content/uploads/2019/08/clients.jpg" alt="Consultoría"/>
+                    <h4>Investigación</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            
         </div>
     </section>
+    <section id="about" class="tabcontent">
+        <div>
+            <h1>Contenido del about</h1>
+        </div>
+    </section>
+
     <script src="./JS/navBar_funtion.js"></script>
 </body>
 </html>
