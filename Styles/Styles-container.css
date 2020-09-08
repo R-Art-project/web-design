@@ -126,13 +126,32 @@
 .columnThree-ourServices button{
     align-self: end;
 }
+#arrow {
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+}
 .columnThree-ourServices ul{
     list-style-type: none;
-    align-self: start;
 }
 .columnThree-ourServices ul li{
-    padding-bottom: 20px;
+    position: relative;
+	padding-bottom: 10px;
 }
+.columnThree-ourServices ul li:before{
+    content: '';
+   position: absolute;
+   border-right:1px solid black;
+   border-bottom:1px solid black;
+   width:10px;
+   height:10px;
+   top: calc(50% - 4px);
+   left: -20px;
+   transform: translateY(-50%) rotate(-45deg);
+ }
 .columnThree-ourServices ul li a{
     color: #db5130;
     text-decoration: none;
