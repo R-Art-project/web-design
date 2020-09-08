@@ -6,11 +6,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 1fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 .principal-section img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover; 
     margin-bottom: 10px; 
 }
@@ -35,11 +35,17 @@
     background-color: #fff;
     border: 1px solid black; 
 }
+.Service-one h4{
+    color: #0b6de4;
+}
 .Service-two{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: #fff;
     border: 1px solid black; 
+}
+.Service-two h4{
+    color: #0fbd91;
 }
 .Service-three{
     grid-column: 3 / 4;
@@ -47,9 +53,70 @@
     background-color: #fff;
     border: 1px solid black; 
 }
+.Service-three h4{
+    color: #f6da3b;
+}
 .Service-for{
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     background-color: #fff;
     border: 1px solid black; 
+}
+.Service-for h4{
+    color: #db5130;
+}
+.secundary-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    grid-gap: 10px;
+    margin-top: 30px;
+    justify-content: center;
+    position: relative;
+}
+.secundary-section h3{
+    margin: 30px 20px;
+    border-bottom: 1px solid black; 
+    font-size: 40px;
+    padding-bottom: 20px; 
+}
+.secundary-section p{
+    margin: 30px 20px;
+}
+.secundary-section button{
+    color: #fff;
+    background-color: #4b4d4c;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.secundary-section button:hover{
+    background-color: #db5130;
+}
+.columnOne-welcom{
+    grid-column: 1 / 2;
+}
+.columnTwo-News{
+    grid-column: 2 / 3;
+}
+.columnThree-ourServices{
+    grid-column: 3 / 4;
+}
+.columnThree-ourServices ul{
+    list-style-type: none;
+}
+.columnThree-ourServices ul li{
+    padding-bottom: 10px;
+}
+.columnThree-ourServices ul li a{
+    color: #db5130;
+    text-decoration: none;
+}
+.columnThree-ourServices ul li a:hover{
+    color: #36140c;
 }
