@@ -1,4 +1,6 @@
-# Website
+<h1 align="center">
+    Website
+</h1>
 
 ### About this repository
 This repository can be used as a template for a simple website<br>
